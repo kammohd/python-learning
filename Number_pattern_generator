@@ -1,0 +1,12 @@
+def number_pattern(n):
+    ret_str = ''
+    if not isinstance(n ,int):
+        return 'Argument must be an integer value.'
+    elif n < 1:
+        return 'Argument must be an integer greater than 0.'
+    else:
+        for number in range(1, n+1):
+            ret_str += str(number) + ' '
+        return ret_str.strip()
+
+print(number_pattern(4))
